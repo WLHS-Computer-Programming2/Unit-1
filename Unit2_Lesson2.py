@@ -16,11 +16,19 @@
 # Use try/except to make sure the user enters numbers
 
 def polygon_area
+# ask how many sides and side length
+# do math
+# return area
 def circle_area
+# ask for radius
+# do math
+# return area
 
 def main():
-    # prompt them
-    # do calcs and store
-    # print
+    # prompt them for type
+    # call appopriate function
+    # area = polygon_area() or area = circle_area() (you do parameters)
+    # print area
 
-main()
+if __name__ == "__main__":
+    main()
