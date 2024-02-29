@@ -53,12 +53,26 @@ def length_comparison(string1:str, string2:str)->int:
             print("They are the same length!")
             return len(string2)
     except TypeError:
-        print("Enter only strings")
+        print("Enter string values only")
 
-counter = 0
-while counter < 10:
-    print(f"Counter value: {counter}")
-    counter += 1
+def square_root_fun(number:int)->float:
+    try:
+        if not str(number).isdigit():
+            raise ValueError
+        return math.sqrt(number)/number
+    except ValueError:
+        print("Number must be a positive integer")
+    except ZeroDivisionError:
+        print("Number must be a positive integer")
 
-print('''This is a line
-    and this is another line''')
+print(square_root_fun(100.4))
+    
+# while True:
+#     try:
+#         word_one = input("Enter a word: ")
+#         word_two = input("Enter a word: ")
+#         if word_one.isdigit() or word_two.isdigit():
+#             raise TypeError
+#         length_comparison(word_one,word_two)
+#     except TypeError:
+#         print("Enter strings only")
