@@ -47,7 +47,7 @@ def make_move(board,player_symbol):
     while True:
         location = int(input(f"Where would you like to put your symbol {player_symbol}? "))
         grid_location = (location_map[location][0],location_map[location][1])
-        if board[grid_location[0]][grid_location[1]] != "X" and board[grid_location[0]][grid_location[1]] != "O":
+        if "X" not in board[grid_location[0]][grid_location[1]] and "O" not in board[grid_location[0]][grid_location[1]]: # use not in
             if location %3 == 0:
                 board = update_board(board,location_map[location][0],location_map[location][1], player_symbol)
             else:
