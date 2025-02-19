@@ -30,3 +30,24 @@ print(f"Fred's number is {contacts.get("Fred")}")
 print(f"John's number is {contacts.get("John")}")
 print(f"John's number is {contacts.get("John",411)}")
 print(contacts)
+
+
+# starting with empty dictionary
+print()
+print("Modifying Lists".center(20,"-"))
+alien_0 = {}
+alien_0['color'] = 'green'
+alien_0['points'] = 5
+print(alien_0)
+alien_0['color'] = 'yellow'
+print(alien_0)
+print(f"The alien's color is {alien_0['color']}")
+
+alien_0['x-pos'] = 0
+alien_0['y-pos'] = 25
+alien_0['speed'] = 'medium'
+
+####
+# If the speed is slow, increment x_pos by 1. If medium, by 2
+# If fast, by 3. Print the initial position and the new position
+####
